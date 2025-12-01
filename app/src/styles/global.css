@@ -56,12 +56,6 @@
   --space-6: 1.5rem; /* 24px */
 }
 
-p,
-a,
-span {
-  color: var(--color-on-surface);
-}
-
 /* @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -71,21 +65,29 @@ span {
   }
 } */
 
+p,
+a,
+span {
+  color: var(--color-on-surface);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+h1 {
+  color: var(--color-primary);
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
 /* Custom Classes */
-.button-primary {
+/* .button {
   @apply inline-flex items-center justify-center font-medium rounded transition;
-  padding: var(--space-2) var(--space-4);
-  background-color: var(--color-primary);
-  color: var(--color-on-primary);
-}
-
-.button-primary:hover {
-  background-color: var(--color-primary-hover);
-}
-
-.button {
-  @apply inline-flex items-center justify-center font-medium rounded transition;
-  padding: var(--space-2) var(--space-4);
+  padding: var(--space-1) var(--space-4);
   background-color: var(--color-secondary);
   color: var(--color-on-primary);
   text-decoration: none;
@@ -98,4 +100,71 @@ span {
 .button:focus-visible {
   outline: 2px solid var(--color-outline);
   outline-offset: 3px;
+} */
+
+.button-secondary {
+  @apply inline-flex items-center justify-center font-medium rounded transition;
+  padding: var(--space-1) var(--space-4);
+  color: var(--color-on-surface);
+  border: 1px solid var(--color-outline);
+  background-color: #ffffff00;
+}
+
+.button-secondary:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-on-surface);
+}
+
+/* CSS */
+.button-primary {
+  appearance: button;
+  background-color: var(--color-primary);
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow:
+    #fff -4px 4px 0 0,
+    #000 -4px 4px 0 1px;
+  box-sizing: border-box;
+  color: var(--color-on-primary);
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: ITCAvantGardeStd-Bk, Arial, sans-serif; */
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-primary:focus {
+  text-decoration: none;
+}
+
+.button-primary:hover {
+  text-decoration: none;
+  color: var(--color-on-primary);
+}
+
+.button-primary:active {
+  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-primary:not([disabled]):active {
+  box-shadow:
+    #fff 2px 2px 0 0,
+    #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-primary {
+    padding: 12px 20px;
+  }
 }

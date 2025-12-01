@@ -37,10 +37,10 @@ module.exports = {
       /* ---------------------------
          Font families
       ---------------------------- */
-      fontFamily: {
-        sans: ["Graphik", "sans-serif"],
-        serif: ["Merriweather", "serif"],
-      },
+      // fontFamily: {
+      //   sans: ["Graphik", "sans-serif"],
+      //   serif: ["Merriweather", "serif"],
+      // },
 
       /* ---------------------------
          Spacing (Material-style)

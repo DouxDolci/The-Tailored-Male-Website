@@ -27,7 +27,7 @@
 
 <!-- Top Info Bar -->
 <div class="fixed top-0 left-0 right-0 z-50 bg-(--surface-bright)">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
     <div
       class="flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm"
     >
@@ -57,14 +57,14 @@
 <!-- Main Navigation -->
 <nav
   class="
-    fixed top-[35px] left-0 right-0 z-50 transition-all duration-300
+    fixed top-[52px] left-0 right-0 z-50 transition-all duration-300 h-20 flex items-center
     {isScrolled
     ? 'bg-(--surface) backdrop-blur-sm shadow-lg'
     : 'bg-(--surface) backdrop-blur-sm'}
   "
   aria-label="Main Navigation"
 >
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-3">
       <p class="">The Tailored Male Barber Shop</p>
 

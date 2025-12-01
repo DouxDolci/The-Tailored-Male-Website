@@ -45,6 +45,21 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /* --------------------------------------
+     Spacing Tokens (Material-style)
+     4-value scale
+  -------------------------------------- */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-4: 1rem; /* 16px */
+  --space-6: 1.5rem; /* 24px */
+}
+
+p,
+a,
+span {
+  color: var(--color-on-surface);
 }
 
 /* @layer base {

@@ -26,26 +26,24 @@
 </script>
 
 <!-- Top Info Bar -->
-<div
-  class="fixed top-0 left-0 right-0 z-50 bg-(--surface) border-b border-neutral-800"
->
+<div class="fixed top-0 left-0 right-0 z-50 bg-(--surface-bright)">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
     <div
       class="flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm"
     >
-      <div class="flex items-center gap-2 text-neutral-300">
-        <MapPin class="w-4 h-4 text-amber-600" />
+      <div class="flex items-center gap-2">
+        <MapPin class="w-4 h-4" color="var(--color-primary)" />
         <span>123 Main Street, East Setauket, NY 11733</span>
       </div>
 
       <div class="flex items-center gap-6">
-        <div class="flex items-center gap-2 text-neutral-300">
-          <Phone class="w-4 h-4 text-amber-600" />
+        <div class="flex items-center gap-2">
+          <Phone class="w-4 h-4" color="var(--color-primary)" />
           <span>(631) 555 0123</span>
         </div>
 
-        <div class="flex items-center gap-2 text-neutral-300">
-          <Clock class="w-4 h-4 text-amber-600" />
+        <div class="flex items-center gap-2">
+          <Clock class="w-4 h-4" color="var(--color-primary)" />
           <span class="hidden lg:inline">
             Mon Fri: 9:00 6:00 | Sat: 9:00 5:30 | Sun: 9:30 4:30
           </span>
@@ -59,37 +57,35 @@
 <!-- Main Navigation -->
 <nav
   class="
-    fixed top-[52px] left-0 right-0 z-50 transition-all duration-300
+    fixed top-[35px] left-0 right-0 z-50 transition-all duration-300
     {isScrolled
-    ? 'bg-black/95 backdrop-blur-sm shadow-lg'
-    : 'bg-black/50 backdrop-blur-sm'}
+    ? 'bg-(--surface) backdrop-blur-sm shadow-lg'
+    : 'bg-(--surface) backdrop-blur-sm'}
   "
   aria-label="Main Navigation"
 >
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-3">
-      <p class="text-neutral-300">The Tailored Male Barber Shop</p>
+      <p class="">The Tailored Male Barber Shop</p>
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-6">
         {#each navItems as item}
-          <a href={item.href} class="navLink text-neutral-300" role="menuitem">
+          <a
+            href={item.href}
+            class="navLink hover:text-(--color-primary) transition-colors"
+            role="menuitem"
+          >
             {item.label}
           </a>
         {/each}
 
-        <a
-          href="#visit"
-          class="button bg-amber-600 hover:bg-amber-700"
-          role="button"
-        >
-          Visit Us
-        </a>
+        <a href="#visit" class="button" role="button"> Visit Us </a>
       </div>
 
       <!-- Mobile Menu Toggle -->
       <button
-        class="md:hidden text-white"
+        class="md:hidden"
         aria-expanded={isOpen}
         aria-label="Toggle navigation menu"
         on:click={() => (isOpen = !isOpen)}
@@ -108,7 +104,7 @@
         {#each navItems as item}
           <a
             href={item.href}
-            class="block text-neutral-300 hover:text-amber-600 transition-colors"
+            class="block hover:text-(--color-primary) transition-colors"
             role="menuitem"
             on:click={() => (isOpen = false)}
           >
@@ -116,13 +112,7 @@
           </a>
         {/each}
 
-        <a
-          href="#visit"
-          class="button w-full bg-amber-600 hover:bg-amber-50 text-center block hover:text-whitetransition-colors"
-          role="button"
-        >
-          Visit Us
-        </a>
+        <a href="#visit" class="button w-full" role="button"> Visit Us </a>
       </div>
     {/if}
   </div>
@@ -147,7 +137,7 @@
     left: 0;
     right: 0;
     height: 5px;
-    background-color: #a6a6a6;
+    background-color: var(--color-primary);
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.3s ease;

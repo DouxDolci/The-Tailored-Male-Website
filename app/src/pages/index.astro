@@ -1,8 +1,14 @@
 ---
-import Navbar from "../components/Navbar.svelte";
-import Hero from "../components/Hero.svelte";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Navbar from "../components/Navbar.svelte";
+import Hero from "../components/Hero.svelte";
+import Testimonials  from "../components/Testimonials.svelte";
+import Services from "../components/Services.svelte";
+import About from "../components/About.svelte";
+import Hours from "../components/Hours.svelte";
+import Contact from "../components/Contact.svelte";
+import Footer from "../components/Footer.svelte";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,4 +17,9 @@ import "../styles/global.css";
 <Layout>
   <Navbar client:load />
   <Hero />
+  <Testimonials />
+  <Services />
+  <Hours client:visible />
+  <Contact />
+  <Footer />
 </Layout>

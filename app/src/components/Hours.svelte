@@ -45,7 +45,7 @@
 <section id="hours" class="py-20 px-4 bg-neutral-950">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-amber-600 uppercase tracking-wider mb-4">Hours</h2>
+      <h2 class=" uppercase tracking-wider mb-4">Hours</h2>
       <p class="text-neutral-400 max-w-2xl mx-auto">
         Walk-ins welcome! We're here when you need us
       </p>
@@ -55,7 +55,7 @@
       <Card className="bg-neutral-900 border-neutral-800">
         <!-- Header -->
         <div slot="header" class="flex items-center justify-center gap-3">
-          <Clock class="w-8 h-8 text-amber-600" />
+          <Clock class="w-8 h-8 text-(--color-primary)" />
           <h3 class="text-white leading-none">Store Hours</h3>
         </div>
 
@@ -63,14 +63,12 @@
         <div class="px-6 pb-6 pt-6 space-y-3">
           {#each hours as schedule, i}
             <div
-              class={`flex justify-between items-center py-3 border-b border-neutral-800 last:border-0 transition-all duration-200 ${
+              class={`flex justify-between items-center p-3 border-b border-neutral-800 last:border-0 transition-all duration-200 ${
                 i === todayIndex ? "bg-neutral-800/30 rounded-xl" : ""
               }`}
             >
               <span
-                class={i === todayIndex
-                  ? "text-amber-600 font-semibold"
-                  : "text-neutral-300"}
+                class={i === todayIndex ? " font-semibold" : "text-neutral-300"}
               >
                 {schedule.day}
               </span>
@@ -78,8 +76,8 @@
               <div class="flex items-center gap-3">
                 <span
                   class={i === todayIndex
-                    ? "text-amber-500 font-semibold"
-                    : "text-amber-600"}
+                    ? "text-(--color-primary) font-semibold"
+                    : ""}
                 >
                   {schedule.time}
                 </span>

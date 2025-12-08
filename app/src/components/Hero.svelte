@@ -15,7 +15,7 @@
       Great Cuts <span class="text-[--color-primary]"><br />For Men</span>
     </h1>
     <p>Quality Haircuts at Affordable Prices</p>
-    <div class="flex gap-4 place-items-center">
+    <div class="mt-8 flex gap-4 place-items-center">
       <a href="#services" class="button-primary mr-4" role="button">
         Our Services
       </a>

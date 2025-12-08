@@ -45,12 +45,8 @@
 <section id="services" class="py-20 px-4 bg-neutral-950">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-amber-600 uppercase tracking-wider mb-4">
-        Haircuts and Grooming
-      </h2>
-      <p class="text-neutral-400 max-w-2xl mx-auto">
-        Quality haircuts at affordable prices
-      </p>
+      <h2 class=" uppercase tracking-wider mb-4">Haircuts and Grooming</h2>
+      <p class="max-w-2xl mx-auto">Quality haircuts at affordable prices</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -65,7 +61,7 @@
             >
               <svelte:component
                 this={service.icon}
-                class="w-6 h-6 text-amber-600"
+                class="w-6 h-6 text-(--color-primary)"
               />
             </div>
             <h3 class="text-white leading-none">{service.title}</h3>
@@ -73,7 +69,7 @@
           </div>
 
           <!-- Content -->
-          <span class="text-amber-600">{service.price}</span>
+          <span class="">{service.price}</span>
         </Card>
       {/each}
     </div>

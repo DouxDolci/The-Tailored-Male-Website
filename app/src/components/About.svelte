@@ -14,10 +14,10 @@
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <!-- Text & Stats -->
       <div>
-        <h2 class="text-amber-600 uppercase tracking-wider mb-6">About Us</h2>
+        <h2 class=" uppercase tracking-wider mb-6">About Us</h2>
         <h3 class="text-white mb-6">Where Craftsmanship Meets Character</h3>
 
-        <div class="space-y-4 text-neutral-400">
+        <div class="space-y-4">
           <p>
             The Tailored Male has been serving the East Setauket community with
             quality haircuts at affordable prices. Our experienced barbers are
@@ -43,7 +43,7 @@
             <div class="text-center">
               <svelte:component
                 this={stat.icon}
-                class="w-8 h-8 text-amber-600 mx-auto mb-2"
+                class="w-8 h-8  mx-auto mb-2"
               />
               <div class="text-white mb-1">{stat.value}</div>
               <div class="text-neutral-500 text-sm">{stat.label}</div>

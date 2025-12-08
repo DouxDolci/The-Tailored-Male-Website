@@ -32,21 +32,25 @@
 <section id="gallery" class="py-20 px-4 bg-neutral-950">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-amber-600 uppercase tracking-wider mb-4">Gallery</h2>
-      <p class="text-neutral-400 max-w-2xl mx-auto">
+      <h2 class=" uppercase tracking-wider mb-4">Gallery</h2>
+      <p class=" max-w-2xl mx-auto">
         Take a look at our craftsmanship and the experience we provide
       </p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {#each galleryImages as image}
-        <div class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer">
-          <ImageWithFallback 
-            src={image.url} 
-            alt={image.alt} 
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" 
+        <div
+          class="relative aspect-square overflow-hidden rounded-lg group cursor-pointer"
+        >
+          <ImageWithFallback
+            src={image.url}
+            alt={image.alt}
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
           />
-          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div
+            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          ></div>
         </div>
       {/each}
     </div>

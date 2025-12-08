@@ -88,6 +88,10 @@ h1 {
   line-height: 1.2;
 }
 
+h2 {
+  color: var(--color-primary);
+}
+
 /* Custom Classes */
 /* .button {
   @apply inline-flex items-center justify-center font-medium rounded transition;
@@ -106,19 +110,6 @@ h1 {
   outline-offset: 3px;
 } */
 
-.button-secondary {
-  @apply inline-flex items-center justify-center font-medium rounded transition;
-  padding: var(--space-1) var(--space-4);
-  color: var(--color-on-surface);
-  border: 1px solid var(--color-outline);
-  background-color: #ffffff00;
-}
-
-.button-secondary:hover {
-  background-color: var(--color-primary-hover);
-  color: var(--color-on-surface);
-}
-
 /* CSS */
 .button-primary {
   appearance: button;
@@ -126,9 +117,7 @@ h1 {
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
-  box-shadow:
-    #fff -4px 4px 0 0,
-    #000 -4px 4px 0 1px;
+  box-shadow: #fff -4px 4px 0 1px;
   box-sizing: border-box;
   color: var(--color-on-primary);
   cursor: pointer;
@@ -153,22 +142,56 @@ h1 {
 .button-primary:hover {
   text-decoration: none;
   color: var(--color-on-primary);
-}
-
-.button-primary:active {
-  box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
-  outline: 0;
+  background-color: var(--color-primary-hover);
 }
 
 .button-primary:not([disabled]):active {
   box-shadow:
-    #fff 2px 2px 0 0,
-    #000 2px 2px 0 1px;
-  transform: translate(2px, 2px);
+    #fff -2px 2px 0 0,
+    #000 -2px 2px 0 1px;
+  transform: translate(-2px, 2px);
+}
+
+.button-secondary {
+  appearance: button;
+  background-color: #ffffff00;
+  background-image: none;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  box-shadow:
+    #fff -4px 4px 0 0,
+    #000 -4px 4px 0 1px;
+  box-sizing: border-box;
+  color: var(--color-on-surface);
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: ITCAvantGardeStd-Bk, Arial, sans-serif; */
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-secondary:focus {
+  text-decoration: none;
+}
+
+.button-secondary:not([disabled]):active {
+  box-shadow:
+    #fff -2px 2px 0 0,
+    #000 -2px 2px 0 1px;
+  transform: translate(-2px, 2px);
 }
 
 @media (min-width: 768px) {
-  .button-primary {
+  .button-primary,
+  .button-secondary {
     padding: 12px 20px;
   }
 }

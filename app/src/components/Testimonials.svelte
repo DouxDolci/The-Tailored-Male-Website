@@ -25,7 +25,7 @@
 <section id="testimonials" class="py-20 px-4 bg-black">
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-amber-600 uppercase tracking-wider mb-4">Testimonials</h2>
+      <h2 class=" uppercase tracking-wider mb-4">Testimonials</h2>
       <p class="text-neutral-400 max-w-2xl mx-auto">
         Hear what people have to say
       </p>
@@ -37,15 +37,15 @@
           <div class="px-6 pb-6 pt-6">
             <div class="flex gap-1 mb-4">
               {#each Array(5) as _}
-                <Star class="w-5 h-5 fill-amber-600 text-amber-600" />
+                <Star class="w-5 h-5 fill-(--color-primary)" />
               {/each}
             </div>
 
-            <p class="text-neutral-300 mb-4 italic">
+            <p class="mb-4 italic">
               "{testimonial.text}"
             </p>
 
-            <p class="text-amber-600">
+            <p class="">
               {testimonial.author}
             </p>
           </div>

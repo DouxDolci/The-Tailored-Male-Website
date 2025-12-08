@@ -4,6 +4,7 @@
 </script>
 
 <section
+  id="home"
   style="background-image: url({heroBg}); background-size: cover; background-position: center;"
   class="relative min-h-screen flex justify-center items-center text-center"
 >

@@ -4,19 +4,19 @@
 
   const testimonials = [
     {
-      text: "Excellent haircut, clean shop, everyone was very friendly and you can't beat the prices!!! I'll be back.",
+      text: "This place does a really good job. Never had anyone do so much detail and ask what I wanted and how I wanted it really great People, great prices And atmosphere. ",
       author: "Happy Customer",
     },
     {
-      text: "A great example of a small business that understands service and appreciation of its customers.",
+      text: "I always get greeted by friendly staff when I'm in there. Definitely a 5 star, classy, friendly, and family-oriented kinda place.",
       author: "Satisfied Client",
     },
     {
-      text: "Best haircut I've had my entire life. The staff is super friendly and they took me immediately.",
+      text: "Everyone is very professional and friendly, the prices are very reasonable, and the facility was clean. Haircuts and the beard trim were excellent.",
       author: "Local Resident",
     },
     {
-      text: "Prompt, courteous service at a great price including neck and side burn shave. Great flat tops too!",
+      text: "The staff is super friendly and they took me immediately. I waited a couple of weeks to write this because I wanted to see how my hair would grow in, and I couldn’t be happier. ",
       author: "Regular Customer",
     },
   ];

@@ -4,6 +4,10 @@
 
 /* @custom-variant dark (&:is(.dark *)); */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /* Primary Brand Color */
   --color-primary: oklch(0.8347 0.1701 89.78);

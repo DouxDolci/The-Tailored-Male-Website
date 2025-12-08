@@ -19,7 +19,7 @@
       <a href="#services" class="button-primary mr-4" role="button">
         Our Services
       </a>
-      <a href="#visit" class="button-secondary" role="button"> Visit Us </a>
+      <a href="#contact" class="button-secondary" role="button"> Visit Us </a>
     </div>
   </div>
 </section>

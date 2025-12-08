@@ -80,7 +80,7 @@
           </a>
         {/each}
 
-        <a href="#visit" class="button" role="button"> Visit Us </a>
+        <a href="#contact" class="button" role="button"> Visit Us </a>
       </div>
 
       <!-- Mobile Menu Toggle -->
@@ -112,7 +112,7 @@
           </a>
         {/each}
 
-        <a href="#visit" class="button w-full" role="button"> Visit Us </a>
+        <a href="#contact" class="button w-full" role="button"> Visit Us </a>
       </div>
     {/if}
   </div>

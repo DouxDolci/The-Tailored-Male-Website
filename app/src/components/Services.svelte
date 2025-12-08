@@ -56,7 +56,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {#each services as service}
         <Card
-          className="bg-neutral-900 border-amber-600 transition-all duration-300"
+          className="bg-neutral-900 border-neutral-800 hover:border-amber-600 transition-all duration-300"
         >
           <!-- Header -->
           <div slot="header">

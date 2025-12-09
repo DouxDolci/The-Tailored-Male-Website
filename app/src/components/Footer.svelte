@@ -26,51 +26,33 @@
         <h4 class="text-white mb-4">Quick Links</h4>
         <ul class="space-y-2">
           <li>
-            <a
-              href="#home"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
-              >Home</a
-            >
+            <a href="#home" class="text-neutral-400 transition-colors">Home</a>
           </li>
           <li>
-            <a
-              href="#services"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
+            <a href="#services" class="text-neutral-400 transition-colors"
               >Services</a
             >
           </li>
           <li>
-            <a
-              href="#about"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
-              >About</a
+            <a href="#about" class="text-neutral-400 transition-colors">About</a
             >
           </li>
           <li>
-            <a
-              href="#hours"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
-              >Hours</a
+            <a href="#hours" class="text-neutral-400 transition-colors">Hours</a
             >
           </li>
           <li>
-            <a
-              href="#gallery"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
+            <a href="#gallery" class="text-neutral-400 transition-colors"
               >Gallery</a
             >
           </li>
           <li>
-            <a
-              href="#testimonials"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
+            <a href="#testimonials" class="text-neutral-400 transition-colors"
               >Testimonials</a
             >
           </li>
           <li>
-            <a
-              href="#contact"
-              class="text-neutral-400 hover:text-amber-600 transition-colors"
+            <a href="#contact" class="text-neutral-400 transition-colors"
               >Contact</a
             >
           </li>

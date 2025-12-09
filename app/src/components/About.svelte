@@ -62,7 +62,7 @@
           />
         </div>
         <div
-          class="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-amber-600 rounded-lg -z-10"
+          class="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-(--color-primary) rounded-lg -z-10"
         ></div>
       </div>
     </div>

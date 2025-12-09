@@ -34,7 +34,7 @@
             <a
               href={item.link}
               target="_blank"
-              class="block bg-neutral-900 border border-neutral-800 rounded-xl hover:border-amber-600 transition-all duration-300"
+              class="block bg-neutral-900 border border-neutral-800 rounded-xl hover:border-(--color-primary) transition-all duration-300"
             >
               <div class="flex items-start gap-4 p-6">
                 <div

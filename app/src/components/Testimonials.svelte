@@ -35,11 +35,15 @@
       {#each testimonials as testimonial}
         <Card className="bg-neutral-900 border-neutral-800">
           <div class="px-6 pb-6 pt-6">
-            <div class="flex gap-1 mb-4">
-              {#each Array(5) as _}
-                <Star class="w-5 h-5 fill-(--color-primary)" />
+            <!-- <div class="flex gap-1 mb-4">
+              {#each Array(5) as _, i (i)}
+                <Star
+                  class="w-5 h-5 text-(--color-primary)"
+                  stroke="none"
+                  fill="currentColor"
+                />
               {/each}
-            </div>
+            </div> -->
 
             <p class="mb-4 italic">
               "{testimonial.text}"

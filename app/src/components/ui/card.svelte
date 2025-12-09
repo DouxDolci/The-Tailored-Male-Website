@@ -24,7 +24,9 @@
   {/if}
 
   {#if $$slots.footer}
-    <div class="flex items-center px-6 pb-6 border-t:border-neutral-800 border-t pt-6">
+    <div
+      class="flex items-center px-6 pb-6 border-t:border-neutral-800 border-t pt-6"
+    >
       <slot name="footer" />
     </div>
   {/if}

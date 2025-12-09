@@ -1,5 +1,6 @@
 <script>
   import { Scissors, Sparkles, User, Users } from "lucide-svelte";
+  import Card from "./ui/card.svelte";
 
   const services = [
     {

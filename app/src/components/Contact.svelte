@@ -1,5 +1,6 @@
 <script>
   import { MapPin, Phone } from "lucide-svelte";
+  import Card from "./ui/card.svelte";
 
   const contactInfo = [
     {

@@ -1,6 +1,5 @@
 <script>
   import { MapPin, Phone } from "lucide-svelte";
-  import Card from "./ui/Card.svelte";
 
   const contactInfo = [
     {
@@ -38,7 +37,7 @@
             >
               <div class="flex items-start gap-4 p-6">
                 <div
-                  class="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center flex-shrink-0"
+                  class="w-12 h-12 rounded-full bg-amber-600/10 flex items-center justify-center shrink-0"
                 >
                   <svelte:component
                     this={item.icon}

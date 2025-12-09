@@ -1,6 +1,5 @@
 <script>
   import { Star } from "lucide-svelte";
-  import Card from "./ui/Card.svelte";
 
   const testimonials = [
     {

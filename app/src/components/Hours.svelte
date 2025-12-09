@@ -1,7 +1,6 @@
 <script>
   import { onDestroy } from "svelte";
   import { Clock } from "lucide-svelte";
-  import Card from "./ui/Card.svelte";
 
   const hours = [
     { day: "Monday", time: "9:00 - 18:00" },

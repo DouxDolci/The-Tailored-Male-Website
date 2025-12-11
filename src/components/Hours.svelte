@@ -42,7 +42,11 @@
   const todayIndex = now.getDay() === 0 ? 6 : now.getDay() - 1;
 </script>
 
-<section id="hours" class="py-20 px-4 bg-(--surface-dim)">
+<section
+  id="hours"
+  style="scroll-margin-top: 7em;"
+  class="py-20 px-4 bg-(--surface-dim)"
+>
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <h2 class=" uppercase tracking-wider mb-4">Hours</h2>

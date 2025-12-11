@@ -18,7 +18,11 @@
   ];
 </script>
 
-<section id="contact" class="py-20 px-4 bg-black">
+<section
+  id="contact"
+  style="scroll-margin-top: 7em;"
+  class="py-20 px-4 bg-black"
+>
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <h2 class="uppercase tracking-wider mb-4">Contact Us</h2>

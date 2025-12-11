@@ -8,10 +8,9 @@
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
+    { label: "Testimonials", href: "#testimonials" },
     // { label: "About", href: "#about" },
     { label: "Hours", href: "#hours" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
   ];
 
   onMount(() => {
@@ -73,7 +72,7 @@
         {#each navItems as item}
           <a
             href={item.href}
-            class="navLink hover:text-(--color-primary) transition-colors"
+            class="navLink hover:text-[var(--color-primary)] transition-colors"
             role="menuitem"
           >
             {item.label}

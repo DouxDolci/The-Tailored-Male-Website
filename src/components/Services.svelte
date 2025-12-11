@@ -42,7 +42,11 @@
   ];
 </script>
 
-<section id="services" class="py-20 px-4 bg-neutral-950">
+<section
+  id="services"
+  style="scroll-margin-top: 7em;"
+  class="py-20 px-4 bg-neutral-950"
+>
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-16">
       <h2 class=" uppercase tracking-wider mb-4">Haircuts and Grooming</h2>

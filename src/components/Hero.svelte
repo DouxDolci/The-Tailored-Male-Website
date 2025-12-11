@@ -12,7 +12,7 @@
   <div
     class="relative z-10 flex flex-col items-center text-white px-4 gap-4 mt-[100px]"
   >
-    <img alt="The project logo" src={logo} />
+    <img alt="The project logo" src={logo} class="h-48 w-48" />
     <h1>
       Great Cuts <span class="text-[--color-primary]"><br />For Men</span>
     </h1>

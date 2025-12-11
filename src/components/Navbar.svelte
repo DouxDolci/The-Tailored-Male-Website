@@ -56,7 +56,7 @@
 <!-- Main Navigation -->
 <nav
   class="
-    fixed top-[52px] left-0 right-0 z-50 transition-all duration-300 h-20 flex items-center
+    fixed top-[50px] left-0 right-0 z-50 transition-all duration-300 h-20 flex items-center
     {isScrolled
     ? 'bg-(--surface) backdrop-blur-sm shadow-lg'
     : 'bg-(--surface) backdrop-blur-sm'}

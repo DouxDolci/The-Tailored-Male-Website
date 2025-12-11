@@ -1,5 +1,4 @@
-# Project-Base
+To Do: [] Edit website url in astro config []
 
-To Do:
-[] Edit website url in astro config
-[] 
+Run
+`bun run install`

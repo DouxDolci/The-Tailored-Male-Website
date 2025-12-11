@@ -68,7 +68,7 @@
                 class="w-6 h-6 text-(--color-primary)"
               />
             </div>
-            <h3 class="text-white leading-none">{service.title}</h3>
+            <h3 class=" leading-none">{service.title}</h3>
             <p class="text-neutral-400">{service.description}</p>
           </div>
 

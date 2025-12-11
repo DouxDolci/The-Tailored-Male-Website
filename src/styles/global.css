@@ -92,6 +92,13 @@ h2 {
   color: var(--color-primary);
 }
 
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-on-surface);
+}
+
 /* Custom Classes */
 /* .button {
   @apply inline-flex items-center justify-center font-medium rounded transition;

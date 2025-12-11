@@ -18,9 +18,23 @@
       isScrolled = window.scrollY > 50;
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const handleClickOutside = (e) => {
+      if (
+        isOpen &&
+        !e.target.closest("nav") &&
+        !e.target.closest("button[aria-label*='menu']")
+      ) {
+        isOpen = false;
+      }
+    };
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("click", handleClickOutside, true);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("click", handleClickOutside, true);
+    };
   });
 </script>
 
@@ -65,14 +79,14 @@
 >
   <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-3">
-      <p class="">The Tailored Male Barber Shop</p>
+      <a href="#home"> The Tailored Male Barber Shop </a>
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-6">
         {#each navItems as item}
           <a
             href={item.href}
-            class="navLink hover:text-[var(--color-primary)] transition-colors"
+            class="navLink hover:text-(--color-primary) transition-colors"
             role="menuitem"
           >
             {item.label}
@@ -96,20 +110,23 @@
         on:click={() => (isOpen = !isOpen)}
       >
         {#if isOpen}
-          <X class="w-6 h-6" />
+          <X class="w-6 h-6 text-(--color-on-surface)" />
         {:else}
-          <Menu class="w-6 h-6" />
+          <Menu class="w-6 h-6 text-(--color-on-surface)" />
         {/if}
       </button>
     </div>
 
     <!-- Mobile Nav -->
     {#if isOpen}
-      <div class="md:hidden py-4 space-y-4" role="menu">
+      <div
+        class="absolute top-full left-0 right-0 md:hidden py-4 px-4 space-y-3 bg-(--surface-container) border-t border-(--color-outline) animate-slide-down"
+        role="menu"
+      >
         {#each navItems as item}
           <a
             href={item.href}
-            class="block hover:text-(--color-primary) transition-colors"
+            class="block text-(--color-on-surface) hover:text-(--color-primary) transition-colors px-2 py-2"
             role="menuitem"
             on:click={() => (isOpen = false)}
           >
@@ -117,13 +134,36 @@
           </a>
         {/each}
 
-        <a href="#contact" class="button w-full" role="button"> Visit Us </a>
+        <div class="pt-4 border-t border-(--color-outline) mt-2">
+          <a
+            href="#contact"
+            class="button px-4 py-2 border-(--color-primary) border rounded-sm text-center w-full block"
+            role="button"
+          >
+            Visit Us
+          </a>
+        </div>
       </div>
     {/if}
   </div>
 </nav>
 
 <style>
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  :global(.animate-slide-down) {
+    animation: slideDown 0.3s ease-out;
+  }
+
   a:not(.button) {
     text-decoration: none;
     position: relative;

@@ -11,9 +11,7 @@
       <div class="md:col-span-2">
         <div class="flex items-center gap-2 mb-4">
           <Scissors class="w-6 h-6 text-(--color-primary)" />
-          <span class="text-white uppercase tracking-wider"
-            >The Tailored Male</span
-          >
+          <span class="uppercase tracking-wider">The Tailored Male</span>
         </div>
         <p class="text-neutral-400 mb-4">
           Quality haircuts at affordable prices. Serving the East Setauket
@@ -23,7 +21,7 @@
 
       <!-- Quick Links -->
       <div>
-        <h4 class="text-white mb-4">Quick Links</h4>
+        <h4 class=" mb-4">Quick Links</h4>
         <ul class="space-y-2">
           <li>
             <a href="#home" class="text-neutral-400 transition-colors">Home</a>
@@ -61,7 +59,7 @@
 
       <!-- Services List -->
       <div>
-        <h4 class="text-white mb-4">Services</h4>
+        <h4 class=" mb-4">Services</h4>
         <ul class="space-y-2 text-neutral-400">
           <li>Men's Haircut - $21</li>
           <li>Senior's Cut - $18</li>

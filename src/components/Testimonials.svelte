@@ -70,9 +70,9 @@
     isolation: isolate;
   }
 
-  .icons svg {
+  /* .icons svg {
     display: block;
     shape-rendering: geometricPrecision;
     vector-effect: non-scaling-stroke;
-  }
+  } */
 </style>

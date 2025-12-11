@@ -60,7 +60,7 @@
         <!-- Header -->
         <div slot="header" class="flex items-center justify-center gap-3">
           <Clock class="w-8 h-8 text-(--color-primary)" />
-          <h3 class="text-white leading-none">Store Hours</h3>
+          <h3 class=" leading-none">Store Hours</h3>
         </div>
 
         <!-- Content -->
@@ -91,7 +91,7 @@
                     class={`text-xs px-2 py-0.5 rounded-lg font-semibold ${
                       isOpen(schedule.time, now)
                         ? "bg-emerald-500 text-black"
-                        : "bg-red-600 text-white"
+                        : "bg-red-600 "
                     }`}
                   >
                     {isOpen(schedule.time, now) ? "Open now" : "Closed now"}

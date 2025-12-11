@@ -15,7 +15,7 @@
       <!-- Text & Stats -->
       <div>
         <h2 class=" uppercase tracking-wider mb-6">About Us</h2>
-        <h3 class="text-white mb-6">Where Craftsmanship Meets Character</h3>
+        <h3 class=" mb-6">Where Craftsmanship Meets Character</h3>
 
         <div class="space-y-4">
           <p>
@@ -45,7 +45,7 @@
                 this={stat.icon}
                 class="w-8 h-8  mx-auto mb-2"
               />
-              <div class="text-white mb-1">{stat.value}</div>
+              <div class="mb-1">{stat.value}</div>
               <div class="text-neutral-500 text-sm">{stat.label}</div>
             </div>
           {/each}

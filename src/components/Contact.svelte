@@ -51,7 +51,7 @@
                 </div>
 
                 <div>
-                  <h4 class="text-white mb-1">{item.title}</h4>
+                  <h4 class="te mb-1">{item.title}</h4>
                   <p class="">{item.info}</p>
                 </div>
               </div>

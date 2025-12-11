@@ -5,11 +5,13 @@
 
 <section
   id="home"
-  style="background-image: url({heroBg}); background-size: cover; background-position: center;"
-  class="relative min-h-screen flex justify-center items-center text-center"
+  style="background-image: url({heroBg}); background-size: cover; background-position: center; height: min(100vh, 900px);"
+  class="relative flex items-center justify-center text-center"
 >
   <div class="absolute inset-0 bg-black opacity-50"></div>
-  <div class="relative z-10 flex flex-col items-center text-white px-4 gap-4">
+  <div
+    class="relative z-10 flex flex-col items-center text-white px-4 gap-4 mt-[100px]"
+  >
     <img alt="The project logo" src={logo} />
     <h1>
       Great Cuts <span class="text-[--color-primary]"><br />For Men</span>

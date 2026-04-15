@@ -1,6 +1,6 @@
 <script>
   import logo from "$assets/logo.png?url";
-  import heroBg from "$assets/hero-bg.jpg?url";
+  import heroBg from "$assets/hero-bg.webp?url";
 </script>
 
 <section
